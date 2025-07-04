@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="manifest" href="/manifest.json" />
+<meta name="msapplication-TileColor" content="#343434">
+<meta name="theme-color" content="#242424">
+<link rel="shortcut icon" href="/icons/icon-48x48.png" type="image/png">
+
+
+
+  
+
+
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FXC9JR2R8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6FXC9JR2R8');
+  </script>
+
+
+
+
+
+  <style>
+    .home-button {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      z-index: 9999; /* Ensure button appears above other content */
+    }
+
+    .content {
+      margin-top: 50px; /* Adjust margin to make space for button */
+    }
+  </style>
+</head>
+
+<body>
+<script>
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js')
+.then(registration => {console.log('Service Worker registered successfully:', registration);})
+.catch(error => {console.log('Error in Service Worker registration:', error);});});}
+</script>
+  <button class="home-button" onclick="goToHomePage()">Home</button>
+  <div class="content">
+    <h1>What does a gun and pack of gum have in common?</h1>
+    <p>
+      When you pull it out in class everyone wants to be your friend.
+    </p>
+    <h1>Why are orphans so succesful?</h1>
+    <p>Someone told them go big or go home and they only had one option.</p>
+    <h1>What's the difference between cars and kids?</h1>
+    <p>
+     I don't have 20 cars in my basement.
+    </p>
+    <h1>How do you surprise a blind person?</h1>
+    <p>
+      Leave the plunger in the toilet?
+    </p>
+    <h1>What does a playstation and michael jackson have in common?</h1>
+    <p>
+      Kids turn both of the on.
+    </p>
+    <h1>What makes sad people jump?</h1>
+    <p>
+      Bridges
+    </p>
+  </div>
+
+  <script>
+    function goToHomePage() {
+      window.location.href = '/'; // Assuming the original page URL is '/'
+    }
+  </script>
+</body>
+
+</html>
