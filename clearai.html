@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="manifest" href="/manifest.json" />
+<link rel="manifest" href="manifest.json" />
 <meta name="msapplication-TileColor" content="#343434">
 <meta name="theme-color" content="#242424">
-<link rel="shortcut icon" href="/icons/icon-48x48.png" type="image/png">
+<link rel="shortcut icon" href="icons/icon-48x48.png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clear AI Support Game - Play Game Online</title>
@@ -30,7 +30,7 @@
 </head>
 <body>
 <script>
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js')
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('sw.js')
 .then(registration => {console.log('Service Worker registered successfully:', registration);})
 .catch(error => {console.log('Error in Service Worker registration:', error);});});}
 </script>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="manifest" href="/manifest.json" />
+<link rel="manifest" href="manifest.json" />
 <meta name="msapplication-TileColor" content="#343434">
 <meta name="theme-color" content="#242424">
-<link rel="shortcut icon" href="/icons/icon-48x48.png" type="image/png">
+<link rel="shortcut icon" href="icons/icon-48x48.png" type="image/png">
   <meta charset="utf-8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,7 +59,7 @@
 </head>
 <body>
 <script>
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js')
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('sw.js')
 .then(registration => {console.log('Service Worker registered successfully:', registration);})
 .catch(error => {console.log('Error in Service Worker registration:', error);});});}
 </script>
@@ -67,12 +67,12 @@ if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigat
   <div class="container">
 
 
-    <div class="flex-item" onclick="window.location.href='/youtube.html';">
+    <div class="flex-item" onclick="window.location.href='https://jordnanblee.github.io/sz-games/youtube.html';">
       <img src="images/youtube.png" alt="Youtube">
     </div>
 
 
-     <div class="flex-item" onclick="window.location.href='/tiktok.html';">
+     <div class="flex-item" onclick="window.location.href='https://jordnanblee.github.io/sz-games/tiktok.html';">
       <img src="images/tiktok.png" alt="Youtube">
     </div>
 
